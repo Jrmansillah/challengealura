@@ -3,8 +3,7 @@
   body {
     font-family: 'Chewy', cursive;
     background-color: antiquewhite;
-    width: auto;
-    height: auto;
+    
     
   }
 
@@ -190,31 +189,31 @@ input:focus{
     
   }
 
-  @media screen and (max-width:480px){
+  @media screen and (max-width:450px){
   
     .cuadro {
       position: absolute;
-      margin-left: 0em;
-      width: 100%; 
+      margin-left: 20em;
+      width: 100%;  
       top: 300px;
 
         
     }
     header{
-      width: 480px;
+      width: 1024px;
     }
     .cuadro1{
       position: absolute;
       top: 920px;
-      margin-left: 0em;
+      margin-left: 20em;
     }
     footer{
-      position: fixed;
-      top: 80%;
-      width: 480px;
+      position: absolute;
+      top: 150%;
+      width: 1024px;
     }
     input{
-      margin-left: 5em;
+      margin-left: 35em;
     }
 }
   
