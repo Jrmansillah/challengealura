@@ -189,5 +189,33 @@ input:focus{
     
     
   }
+
+  @media screen and (max-width:480px){
+  
+    .cuadro {
+      position: absolute;
+      margin-left: 0em;
+      width: 100%; 
+      top: 300px;
+
+        
+    }
+    header{
+      width: 480px;
+    }
+    .cuadro1{
+      position: absolute;
+      top: 920px;
+      margin-left: 0em;
+    }
+    footer{
+      position: fixed;
+      top: 80%;
+      width: 480px;
+    }
+    input{
+      margin-left: 5em;
+    }
+}
   
 
