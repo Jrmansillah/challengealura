@@ -36,9 +36,7 @@ function desencriptarMensaje(mensajed) {
     return mensajed;
 }
 
-function alerta(){
-    alert("Se ha copiado el texto")
-}
+
 
 
 
@@ -48,16 +46,20 @@ boton1.addEventListener('click', () => {
   // Agrega la clase "animacion-360" al cuadro
   cuadro.classList.add('animacion-360');
 
+
   // Define un temporizador para que se ejecute después de que se complete la animación
   setTimeout(() => {
     // Quita la clase "animacion-360" del cuadro
     cuadro.classList.remove('animacion-360');
-
+    
     // Obtiene el valor del input
     const mensaje = input.value;
 
     // Encriptar el mensaje
     const mensajeEncriptado = encriptarMensaje(mensaje);
+
+    // Cambia el color del fondo del cuadro después de la animación
+    cuadro.classList.add('colorcuadro');
 
     // Muestra el mensaje encriptado en el cuadro
     cuadro.innerText = mensajeEncriptado;
@@ -70,25 +72,44 @@ boton1.addEventListener('click', () => {
 boton2.addEventListener('click', () => {
     // Agrega la clase "animacion-360" al cuadro
     cuadro.classList.add('animacion-360');
+    
 
     // Define un temporizador para que se ejecute después de que se complete la animación
     setTimeout(() => {
       // Quita la clase "animacion-360" del cuadro
       cuadro.classList.remove('animacion-360');
+      // Quito fondo de encriptar por el original
+      cuadro.classList.remove('colorcuadro');
+      
+      
   
       // Obtiene el valor del input
       const mensajed = input.value;
   
       // Desencriptar el mensaje
       const mensajeEncriptado = desencriptarMensaje(mensajed);
+      
   
       // Muestra el mensaje Desencriptado en el cuadro
       cuadro.innerText = mensajeEncriptado;
       boton.style.display = 'inline-block';
+        // Cambia el color del fondo del cuadro después de la animación
+      cuadro.classList.add('finalizado2');
       
     }, 1000);
   });
+  boton.addEventListener('click',()=>{
+    
+    // Alerta para informar al usuario que el texto ha sido copiado
+    alert('El texto ha sido copiado al portapapeles.');
+  
+  });
 
+    
+
+  
+
+  
   
   
 

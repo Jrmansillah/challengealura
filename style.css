@@ -3,37 +3,47 @@
   body {
     font-family: 'Chewy', cursive;
     background-color: antiquewhite;
+    width: auto;
+    height: auto;
     
   }
 
+  header img{
+    position: absolute;
+    top: 0px;
+    padding-top: 10px;
+    width: 10%;
+    
+  }
   
-  
-header h1 img{
+header{
   position: absolute;
   top: 0px;
-  padding-top: 10px;
-  margin-left: 10px;
-  width: 10%;
-  
-}
-.cuadro{
-    background: url(imagenes/Noche.jpg)
+  width: 100%;
+  height: 15%;
+  background: #9BDEEB;
 
 }
+
+
+
+
 .cuadro{
     position: relative;
     width: 400px;
-    height: 600px;
+    height: 500px;
     top: 5px;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     margin-left: 45em;
     margin-block-end: 10px;
+    margin-top: 100px;
     border-radius: 32px;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #e7dfdf;
+    background: url(imagenes/Dia.png)
 
 
 }
@@ -43,7 +53,7 @@ header h1 img{
     position: absolute;
     padding: 10px;
     border: none;
-    background-color: #4CAF50;
+    background: #fab20d;
     color: white;
     font-size: 16px;
     cursor: pointer;
@@ -57,7 +67,7 @@ header h1 img{
 
 
 .boton:hover {
-    background-color: #3e8e41;
+  background-color: rgba(255, 254, 254, 0.5);
   }
 
 
@@ -119,11 +129,12 @@ input:focus{
 
   
   .boton-1:hover{
-    background-color: #3e8e41;
+    background-color: #2d56df;
+    
   }
   
   .boton-2:hover{
-    background-color: #3e8e41;
+    background-color: #000000;
   }
 
   footer{
@@ -141,6 +152,8 @@ input:focus{
     }
     to {
       transform: rotateY(180deg);
+     
+     
     }
   }
   .boton {
@@ -149,6 +162,7 @@ input:focus{
   
   .animacion-360 {
     animation: animacion-360 1s ease-in-out forwards;
+    animation-fill-mode: both;
   }
 
   .animacion-360::after {
@@ -160,10 +174,20 @@ input:focus{
     left: 0;
     width: 100%;
     height: 100%;
+   
     z-index: -1; /* Coloca el pseudo-elemento detrás del contenido */
   }
   
+  .colorcuadro {
+    background: url(imagenes/Noche.png);
+  }
+
+
+  
   .animacion-360.finalizado .boton {
     display: inline-block; /* Muestra el botón después de que termine la animación */
+    
+    
   }
+  
 
